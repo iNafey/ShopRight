@@ -1,6 +1,6 @@
 <?php
   // Dependencies
-  require_once("assets/php/base.php");
+  require_once("../assets/php/base.php");
 
   // Start or continue a PHP session
   session_start();
@@ -44,17 +44,17 @@
 
   <!-- CSS -->
 
-  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
 
-  <link rel="stylesheet" href="assets/css/maicons.css">
+  <link rel="stylesheet" href="../assets/css/maicons.css">
 
-  <link rel="stylesheet" href="assets/vendor/animate/animate.css">
+  <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
 
-  <link rel="stylesheet" href="assets/vendor/owl-carousel/css/owl.carousel.css">
+  <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
 
-  <link rel="stylesheet" href="assets/vendor/fancybox/css/jquery.fancybox.css">
+  <link rel="stylesheet" href="../assets/vendor/fancybox/css/jquery.fancybox.css">
 
-  <link rel="stylesheet" href="assets/css/nafey.css">
+  <link rel="stylesheet" href="../assets/css/nafey.css">
 
 </head>
 
@@ -87,7 +87,7 @@
     <div class="container">
       <div class="logo">
         <a href="/">
-          <img src="assets/img/shopright.jpg" alt="ShopRight">
+          <img src="../assets/img/shopright.jpg" alt="ShopRight">
         </a>
       </div>
       <div class="wrapper">
@@ -107,7 +107,7 @@
         <div class="col-md-3"></div>
         <div class="col-md-6 p-2 my-5 border rounded text-center">
           <div class="center-block tick m-2">
-            <img src="assets/img/green-tick.jpg">
+            <img src="../assets/img/green-tick.jpg">
           </div>
           <h2 class="pt-3 font-weight-bold fg-success">Order Confirmed!</h2>
           <p class="m-3"><strong>Order ID: </strong>10001</p>
@@ -123,19 +123,19 @@
 
   <!-- JavaScript -->
 
-  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
 
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
 
-  <script src="assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
 
-  <script src="assets/vendor/wow/wow.min.js"></script>
+  <script src="../assets/vendor/wow/wow.min.js"></script>
 
-  <script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+  <script src="../assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
 
-  <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/isotope/isotope.pkgd.min.js"></script>
 
-  <script src="assets/js/theme.js"></script>
+  <script src="../assets/js/theme.js"></script>
 
 </body>
 
