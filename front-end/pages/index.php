@@ -1,6 +1,6 @@
 <?php
 // Dependencies
-require_once("assets/php/base.php");
+require_once("../assets/php/base.php");
 
 // Start or continue a PHP session
 session_start();
@@ -13,20 +13,20 @@ basketInit();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
   <title>ShopRight</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.css">
-  <link rel="stylesheet" href="assets/css/maicons.css">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/vendor/animate/animate.css">
-  <link rel="stylesheet" href="assets/vendor/owl-carousel/css/owl.carousel.css">
-  <link rel="stylesheet" href="assets/vendor/fancybox/css/jquery.fancybox.css">
-  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/maicons.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+  <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
+  <link rel="stylesheet" href="../assets/vendor/fancybox/css/jquery.fancybox.css">
+  <link rel="stylesheet" href="../assets/css/theme.css">
   <script src="https://kit.fontawesome.com/d8f16ae167.js" crossorigin="anonymous"></script>
-  <script src="assets/js/jquery-3.5.1.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
-  <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/wow/wow.min.js"></script>
-  <script src="assets/js/theme.js"></script>
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/wow/wow.min.js"></script>
+  <script src="../assets/js/theme.js"></script>
 
 </head>
 <body>
@@ -57,7 +57,7 @@ basketInit();
      <div class="container">
       <div class="logo">
           <a href="/">
-            <img src="assets/img/shopright.jpg" alt="ShopRight">
+            <img src="../assets/img/shopright.jpg" alt="ShopRight">
           </a>
       </div>
 
@@ -74,7 +74,7 @@ basketInit();
       <div class="slider-wrapper">
         <div class="owl-carousel hero-carousel">
           <div class="hero-carousel-item">
-            <img src="assets/img/bg_image_1.jpg" alt="">
+            <img src="../assets/img/bg_image_1.jpg" alt="">
             <div class="img-caption">
               <div class="subhead">The leading grocery store </div>
               <h1 class="mb-4">Amazing quality food at amazing prices</h1>
@@ -82,14 +82,14 @@ basketInit();
             </div>
           </div>
           <div class="hero-carousel-item">
-            <img src="assets/img/bg_image_2.jpg" alt="">
+            <img src="../assets/img/bg_image_2.jpg" alt="">
             <div class="img-caption">
               <h1 class="mb-4">Sourcing our foods from reputable farmers</h1>
               
             </div>
           </div>
           <div class="hero-carousel-item">
-            <img src="assets/img/bg_image_3.jpg" alt="">
+            <img src="../assets/img/bg_image_3.jpg" alt="">
             <div class="img-caption">
               <div class="subhead">Shopping has never been easier!</div>
               <h1 class="mb-4">Find your favourite products at ShopRight.</h1>
@@ -114,7 +114,7 @@ basketInit();
           </div>
           <div class="col-lg-6 py-3">
             <div class="about-img">
-              <img src="assets/img/about.jpg" alt="">
+              <img src="../assets/img/about.jpg" alt="">
             </div>
           </div>
         </div>
