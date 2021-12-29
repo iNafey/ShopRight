@@ -1,7 +1,7 @@
 <?php
 // Dependencies
-require_once("assets/php/base.php");
-require_once("assets/php/queries.php");
+require_once("../assets/php/base.php");
+require_once("../assets/php/queries.php");
 
 // Start or continue a php session
 session_start();
@@ -15,7 +15,7 @@ function showProducts()  {
 	// Get all the products
 	$products = getProducts();
 	// Create a string template for a single product
-	$singleProductHtml = '<div class="col-sm-4"><div class="product-image-wrapper"><div class="single-products"><div class="productinfo text-center"><a href="product?productId=%d"><img src="assets/img/products/%d.png" class="product-img-size" alt="" /><h2>%s</h2></a><p>£%.2f</p><input type="range" name="quantityFor%d" value=1 id="quantityFor%d" min="1" max="%s"><p>Quantity: <span id="quantityOutFor%d"></span></p><button type="submit" name="productId" value="%d" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button></div></div></div></div>';
+	$singleProductHtml = '<div class="col-sm-4"><div class="product-image-wrapper"><div class="single-products"><div class="productinfo text-center"><a href="product?productId=%d"><img src="../assets/img/products/%d.png" class="product-img-size" alt="" /><h2>%s</h2></a><p>£%.2f</p><input type="range" name="quantityFor%d" value=1 id="quantityFor%d" min="1" max="%s"><p>Quantity: <span id="quantityOutFor%d"></span></p><button type="submit" name="productId" value="%d" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button></div></div></div></div>';
 	// Store the current value in row
 	$rowIndex = 1;
 	foreach ($products as $product) {
@@ -55,18 +55,18 @@ function showProducts()  {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="copyright" content="MACode ID, https://macodeid.com/">
     <title>ShopRight - Products</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/maicons.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/responsive.css">
-	<link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/maicons.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../assets/css/responsive.css">
+	<link rel="stylesheet" href="../assets/css/theme.css">
 	<script src="https://kit.fontawesome.com/d8f16ae167.js" crossorigin="anonymous"></script>
-	<script src="assets/js/jquery-3.5.1.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.scrollUp.min.js"></script>
-    <script src="assets/js/main.js"></script>
-	<script src="assets/js/slider.js"></script>
+	<script src="../assets/js/jquery-3.5.1.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script src="../assets/js/jquery.scrollUp.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+	<script src="../assets/js/slider.js"></script>
 </head><!--/head-->
 
 <body>
@@ -93,7 +93,7 @@ function showProducts()  {
      <div class="container">
       <div class="logo">
           <a href="/">
-            <img src="assets/img/shopright.jpg" alt="ShopRight">
+            <img src="../assets/img/shopright.jpg" alt="ShopRight">
           </a>
       </div>
 
