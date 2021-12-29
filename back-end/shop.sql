@@ -1,98 +1,98 @@
 -- -----------------------------------------------------
--- Schema shopright
+-- Schema miniproject
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `shopright` ;
-
--- -----------------------------------------------------
--- Schema shopright
--- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `shopright` ;
-USE `shopright` ;
+DROP SCHEMA IF EXISTS `miniproject` ;
 
 -- -----------------------------------------------------
--- Table `shopright`.`product`
+-- Schema miniproject
 -- -----------------------------------------------------
-
-DROP TABLE IF EXISTS `shopright`.`product`;
-DROP TABLE IF EXISTS `shopright`.`customer`;
-DROP TABLE IF EXISTS `shopright`.`order`;
-DROP TABLE IF EXISTS `shopright`.`ProductList`;
-DROP TABLE IF EXISTS `shopright`.`deliver address`;
-
-
-
-
-CREATE TABLE IF NOT EXISTS `shopright`.`product` (
-  `ProductId` INT AUTO_INCREMENT,
-  `Product name` VARCHAR(100) NULL DEFAULT NULL,
-  `Category` VARCHAR(100) NULL DEFAULT NULL,
-  `Country of origin` VARCHAR(100) NULL DEFAULT NULL,
-  `Price` FLOAT NULL DEFAULT NULL,
-  `Weight` FLOAT NULL DEFAULT NULL,
-  `Calories` INT NULL DEFAULT NULL,
-  `Stock` INT NULL DEFAULT NULL,
-  `Description` VARCHAR(255) NULL DEFAULT NULL,
-  PRIMARY KEY (`ProductId`));
-
+CREATE SCHEMA IF NOT EXISTS `miniproject` ;
+USE `miniproject` ;
 
 -- -----------------------------------------------------
--- Table `shopright`.`customer`
+-- Table `miniproject`.`product`
 -- -----------------------------------------------------
 
-CREATE TABLE IF NOT EXISTS `shopright`.`customer` (
-  `CustomerId` INT AUTO_INCREMENT ,
-  `First name` VARCHAR(100) NULL DEFAULT NULL,
-  `Last name` VARCHAR(100) NULL DEFAULT NULL,
-  `Mobile number` VARCHAR(11) NULL DEFAULT NULL,
-  `Other number` VARCHAR(11) NULL DEFAULT NULL,
-  `LastAccess` DATE  NOT NULL,
-  PRIMARY KEY (`CustomerId`));
+DROP TABLE IF EXISTS `miniproject`.`product`;
+DROP TABLE IF EXISTS `miniproject`.`customer`;
+DROP TABLE IF EXISTS `miniproject`.`order`;
+DROP TABLE IF EXISTS `miniproject`.`productlist`;
+DROP TABLE IF EXISTS `miniproject`.`deliver_address`;
+
+
+
+
+CREATE TABLE IF NOT EXISTS `miniproject`.`product` (
+  `product_id` INT AUTO_INCREMENT,
+  `product_name` VARCHAR(100) NULL DEFAULT NULL,
+  `category` VARCHAR(100) NULL DEFAULT NULL,
+  `country_of_origin` VARCHAR(100) NULL DEFAULT NULL,
+  `price` FLOAT NULL DEFAULT NULL,
+  `weight` FLOAT NULL DEFAULT NULL,
+  `calories` INT NULL DEFAULT NULL,
+  `stock` INT NULL DEFAULT NULL,
+  `description` VARCHAR(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`product_id`));
 
 
 -- -----------------------------------------------------
--- Table `shopright`.`order`
+-- Table `miniproject`.`customer`
 -- -----------------------------------------------------
 
-CREATE TABLE IF NOT EXISTS `shopright`.`order` (
-  `OrderId` INT  AUTO_INCREMENT,
-  `CustomerId` INT NOT NULL UNIQUE,
-  PRIMARY KEY (`OrderId`, `CustomerId`),
-  UNIQUE INDEX `idBasket` (`OrderId` ASC) VISIBLE,
-  CONSTRAINT `CustomerId`
-    FOREIGN KEY (`CustomerId`)
-    REFERENCES `shopright`.`customer` (`CustomerId`));
+CREATE TABLE IF NOT EXISTS `miniproject`.`customer` (
+  `customer_id` INT AUTO_INCREMENT ,
+  `first_name` VARCHAR(100) NULL DEFAULT NULL,
+  `last_name` VARCHAR(100) NULL DEFAULT NULL,
+  `mobile_number` VARCHAR(11) NULL DEFAULT NULL,
+  `other_number` VARCHAR(11) NULL DEFAULT NULL,
+  `last_access` DATE  NOT NULL,
+  PRIMARY KEY (`customer_id`));
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`ProductList`
+-- Table `miniproject`.`order`
 -- -----------------------------------------------------
 
-CREATE TABLE IF NOT EXISTS `shopright`.`ProductList` (
-  `OrderId` INT AUTO_INCREMENT,
-  `ProductId` INT NOT NULL ,
-  PRIMARY KEY (`OrderId`, `ProductId`),
-  INDEX `ProductId_idx` (`ProductId` ASC) VISIBLE,
-    FOREIGN KEY (`ProductId`)
-    REFERENCES `shopright`.`product` (`ProductId`),
-    FOREIGN KEY (`OrderId`)
-    REFERENCES `shopright`.`order` (`OrderId`)
+CREATE TABLE IF NOT EXISTS `miniproject`.`order` (
+  `order_id` INT  AUTO_INCREMENT,
+  `customer_id` INT NOT NULL UNIQUE,
+  PRIMARY KEY (`order_id`, `customer_id`),
+  UNIQUE INDEX `idBasket` (`order_id` ASC) VISIBLE,
+  CONSTRAINT `customer_id`
+    FOREIGN KEY (`customer_id`)
+    REFERENCES `miniproject`.`customer` (`customer_id`));
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`productlist`
+-- -----------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS `miniproject`.`productlist` (
+  `order_id` INT AUTO_INCREMENT,
+  `product_id` INT NOT NULL ,
+  PRIMARY KEY (`order_id`, `product_id`),
+  INDEX `product_id_idx` (`product_id` ASC) VISIBLE,
+    FOREIGN KEY (`product_id`)
+    REFERENCES `miniproject`.`product` (`product_id`),
+    FOREIGN KEY (`order_id`)
+    REFERENCES `miniproject`.`order` (`order_id`)
     );
 
 
 -- -----------------------------------------------------
--- Table `shopright`.`deliver address`
+-- Table `miniproject`.`deliver_address`
 -- -----------------------------------------------------
 
-CREATE TABLE IF NOT EXISTS `shopright`.`deliver address` (
-  `OrderId` INT NOT NULL UNIQUE,
-  `Address Line 1` VARCHAR(100) NOT NULL,
-  `Address Line  2` VARCHAR(100) NULL DEFAULT NULL,
-  `City` VARCHAR(100) NULL DEFAULT NULL,
-  `County` VARCHAR(100) NULL DEFAULT NULL,
-  `Postal code` VARCHAR(100) NULL DEFAULT NULL,
-  PRIMARY KEY (`OrderId`),
-    FOREIGN KEY (`OrderId`)
-    REFERENCES `shopright`.`order` (`OrderId`));
+CREATE TABLE IF NOT EXISTS `miniproject`.`deliver_address` (
+  `order_id` INT NOT NULL UNIQUE,
+  `address_line_1` VARCHAR(100) NOT NULL,
+  `address_line_2` VARCHAR(100) NULL DEFAULT NULL,
+  `city` VARCHAR(100) NULL DEFAULT NULL,
+  `county` VARCHAR(100) NULL DEFAULT NULL,
+  `postal_code` VARCHAR(100) NULL DEFAULT NULL,
+  PRIMARY KEY (`order_id`),
+    FOREIGN KEY (`order_id`)
+    REFERENCES `miniproject`.`order` (`order_id`));
 
 
 
