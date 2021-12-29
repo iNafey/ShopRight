@@ -1,0 +1,183 @@
+.fg-white {
+    color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.img-place img {
+    width: 50%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.bg-img-parallax {
+    background-attachment: inherit;
+}
+
+.page-banner {
+    position:relative;
+    height: 150px;
+    background-color: #6D728B;
+}
+
+.page-section {
+    position: relative;
+    /*right:500px;*/
+    display: block;
+    padding: 80px 0;
+}
+
+.title-section {
+    /*display:block */
+    max-width: 450px;
+    color: #2d2f38;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.text-center .title-section .text-left{
+    /*margin-left: auto;
+    margin-right: auto;*/
+  
+    margin-left: 0;
+    position: absolute;
+    left: 0px;
+}
+
+/*                                                              My changes START FROM BELOW THIS                                                                                  */
+.newcontainer1 {
+  display: table;
+  width: 100%;
+  margin:300px;
+  /*border: 2px dashed lightgrey;*/
+}
+
+.newcontainer2 {
+  display: table;
+  width: 100%;
+  margin-top: 30%;
+  margin-bottom: 15%;
+  /*border: 2px dashed lightgrey;*/
+}
+
+.left-half {
+
+  position: absolute;
+  left: 0px;
+  width: 50%;
+  /*border: 2px dotted red;*/
+}
+
+.formdetails1 {
+  /*border: 2px solid blue;*/
+  float:left;
+  margin: 10% 20% 10% 20%;
+  text-align: center;
+  max-width: 600px;
+  color: #2d2f38;
+  font-weight: 600;
+}
+
+.formdetails2 {
+  /*border: 2px solid blue;*/
+  float:right;
+  margin:65% 30% 0% 0%;
+  text-align: center;
+  max-width: 600px;
+  color: #2d2f38;
+  font-weight: 600;
+
+}
+
+.formdetails3 {
+  position: relative;
+  left:250px;
+  text-align: center;
+  max-width: 450px;
+  color: #2d2f38;
+  font-weight: 600;
+  padding-top: 130px;
+  margin-bottom: 50px;
+
+}
+
+.formdetails4 {
+  margin: 5% 5% 5% 5%;
+  text-align: center;
+  max-width: 800px;
+  color: #2d2f38;
+  font-weight: 600;
+  /*border: 2px solid blue;*/
+
+
+}
+
+.formfields1 {
+  padding-top: 80px;
+}
+
+.formfields2 {
+  /*border: 2px solid green;*/
+  margin-top: 32%;
+  padding-top: 10%;
+  margin-bottom: 50%;
+}
+
+.formfields3 {
+  padding-top: 230px;
+}
+
+.formfields4 {
+  padding-left: 15%;
+  margin-top: 10% 0% 5% 0%;
+}
+
+.right-half {
+  position: absolute;
+  right: 0px;
+  width: 50%;
+  /*border: 2px dotted blue;*/
+}
+
+.leftformat{
+  /*border: 3px solid black;*/
+  padding-left: 275px;
+  height:inherit;
+
+}
+
+.summary-border {
+  float:right;
+  margin: 25% 25% 10% 0%;
+  border: 2px solid red;
+  border-radius: 10px;
+
+}
+
+.marginbottom {
+  margin-top: 0%;
+  margin-bottom: 8%;
+}
+
+
+.logo {
+  display: block;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  width:120px;
+  height:100px
+}
+
+.logo:hover {
+  -webkit-box-shadow: 0 3px 12px rgba(109, 114, 139, 0.2);
+          box-shadow: 0 3px 12px rgba(109, 114, 139, 0.2);
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=theme.css.map */
+   

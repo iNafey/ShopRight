@@ -1,0 +1,23 @@
+.about-img {
+    width: 35%;
+    
+    border-radius: 12px;
+    
+    -webkit-box-shadow: 0 8px 16px rgba(109, 114, 139, 0.3);
+            box-shadow: 0 8px 16px rgba(109, 114, 139, 0.3);
+    -webkit-transform: skewX(-3deg) rotateX(20deg);
+            transform: skewX(-3deg) rotateX(20deg);
+  }
+  
+/* I added these to fix the styling */
+#none-shall-float *{
+        float:none;
+}
+
+#none-shall-float {
+        margin:auto;
+}
+
+#product-information {
+        margin:auto;
+}
