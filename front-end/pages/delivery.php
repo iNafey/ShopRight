@@ -1,7 +1,7 @@
 <?php
 // Dependencies
-require_once("assets/php/base.php");
-require_once("assets/php/queries.php");
+require_once("../assets/php/base.php");
+require_once("../assets/php/queries.php");
 
 // Start or continue a php session
 session_start();
@@ -16,22 +16,22 @@ basketInit();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
   <title>ShopRight - Basket</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.css">
-  <link rel="stylesheet" href="assets/css/maicons.css">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/vendor/animate/animate.css">
-  <link rel="stylesheet" href="assets/vendor/owl-carousel/css/owl.carousel.css">
-  <link rel="stylesheet" href="assets/vendor/fancybox/css/jquery.fancybox.css">
-  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/maicons.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+  <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.css">
+  <link rel="stylesheet" href="../assets/vendor/fancybox/css/jquery.fancybox.css">
+  <link rel="stylesheet" href="../assets/css/theme.css">
 
-  <script src="assets/js/jquery-3.5.1.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
-  <script src="assets/vendor/wow/wow.min.js"></script>
-  <script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
-  <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
-  <script src="assets/js/google-maps.js"></script>
-  <script src="assets/js/theme.js"></script>
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/wow/wow.min.js"></script>
+  <script src="../assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+  <script src="../assets/vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="../assets/js/google-maps.js"></script>
+  <script src="../assets/js/theme.js"></script>
 
 </head>
 <body>
@@ -62,7 +62,7 @@ basketInit();
      <div class="container">
       <div class="logo">
         <a href="/">
-          <img src="assets/img/shopright.jpg" alt="ShopRight">
+          <img src="../assets/img/shopright.jpg" alt="ShopRight">
         </a>
       </div>
 
